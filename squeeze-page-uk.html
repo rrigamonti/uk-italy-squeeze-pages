@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UK E-commerce Growth Blueprint 2026</title>
@@ -9,6 +27,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>h1,h2,h3{font-family:'Playfair Display',serif}body{font-family:'Source Sans 3',sans-serif}</style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
 </head>
 <body class="bg-slate-50">
     <nav class="w-full py-6 px-6 lg:px-12">
@@ -30,8 +58,7 @@
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <div class="space-y-8">
                     <span class="inline-flex items-center gap-2 px-4 py-2 bg-teal-800/10 text-teal-800 rounded-full text-sm font-medium">
-                        <i data-lucide="file-text" class="w-4 h-4"></i>42-Page Strategic Guide — Free
-                    </span>
+                        <i data-lucide="file-text" class="w-4 h-4"></i>42-Page Strategic Guide — Free</span>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">Break the <span class="italic text-teal-800">£2M Plateau</span></h1>
                     <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-xl">47% of UK e-commerce businesses stall after hitting £2M. Discover the exact strategies <strong class="text-gray-900">23 companies</strong> used to scale past £10M+ — with post-Brexit compliance, tax efficiency, and 2026 consumer insights baked in.</p>
                     <form class="space-y-4 max-w-md" onsubmit="event.preventDefault(); alert('Connect your email service');">
@@ -136,7 +163,7 @@
             <p class="mb-2">© 2026 UK E-commerce Blueprint. All rights reserved.</p>
             <p>GDPR Compliant • No spam • Unsubscribe anytime</p>
         </div>
-</footer>
+    </footer>
     <script>lucide.createIcons();</script>
 </body>
 </html>
