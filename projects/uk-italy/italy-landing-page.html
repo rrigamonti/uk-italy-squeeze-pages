@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Roadmap del E-commerce Italiano 2026</title>
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+            background: #f9f9fb;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: #111;
+            color: #fff;
+            padding: 12px 0;
+            font-size: 0.9rem;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        .trust-bar .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #0da271;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(16, 185, 129, 0.4);
+        }
+
+        /* Stats */
+        .stats {
+            padding: 80px 0;
+            background: #fff;
+            text-align: center;
+        }
+        .stats h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #1f2937;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        .stat-item h3 {
+            font-size: 3.5rem;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .stat-item p {
+            font-size: 1.2rem;
+            color: #6b7280;
+        }
+
+        /* Problem Cards */
+        .problem-cards {
+            padding: 80px 0;
+            background: #f3f4f6;
+        }
+        .problem-cards h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1f2937;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-left: 5px solid #8b5cf6;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1f2937;
+        }
+        .card p {
+            color: #6b7280;
+        }
+
+        /* What's Inside */
+        .whats-inside {
+            padding: 80px 0;
+            background: white;
+        }
+        .whats-inside h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1f2937;
+        }
+        .features {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            background: #f8fafc;
+            border-left: 4px solid #10b981;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: #10b981;
+        }
+        .feature-text h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #1f2937;
+        }
+        .feature-text p {
+            color: #6b7280;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .final-cta p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        .email-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: 10px;
+        }
+        .email-input {
+            flex: 1;
+            padding: 18px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+        }
+        .submit-button {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 18px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-button:hover {
+            background: #0da271;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #aaa;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .email-form {
+                flex-direction: column;
+            }
+            .trust-bar .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-item">🔒 Conforme GDPR</div>
+            <div class="trust-item">⭐ Utilizzata da 900+ Aziende Italiane</div>
+            <div class="trust-item">📊 Guida Strategica di 35 Pagine</div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Il 52% degli e‑commerce italiani non supera i €2M di fatturato. Scopri come 18 aziende hanno raggiunto i €10M+.</h1>
+            <p>La Roadmap del E‑commerce Italiano 2026: la guida definitiva per navigare le tendenze, le normative e le strategie che funzionano davvero nel mercato italiano.</p>
+            <a href="#final-cta" class="cta-button">SCARICA GRATIS LA ROADMAP</a>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h2>I Risultati Parlano</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>18</h3>
+                    <p>Aziende italiane hanno raggiunto i €10M+ con questi framework</p>
+                </div>
+                <div class="stat-item">
+                    <h3>31%</h3>
+                    <p>Incremento medio del fatturato entro 12 mesi</p>
+                </div>
+                <div class="stat-item">
+                    <h3>91%</h3>
+                    <p>dei lettori implementa almeno 3 tattiche entro 30 giorni</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Cards -->
+    <section class="problem-cards">
+        <div class="container">
+            <h2>Perché il tuo e‑commerce è bloccato sotto i €2M?</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Fattore 1: Tendenze del consumatore italiano</h3>
+                    <p>Le tendenze del consumatore italiano cambiano più velocemente delle tue campagne.</p>
+                </div>
+                <div class="card">
+                    <h3>Fattore 2: Normativa fiscale e logistica</h3>
+                    <p>La normativa fiscale e logistica ti costa il 15% del margine.</p>
+                </div>
+                <div class="card">
+                    <h3>Fattore 3: Piattaforme generiche</h3>
+                    <p>Le piattaforme generiche non sono ottimizzate per il mercato locale.</p>
+                </div>
+                <div class="card">
+                    <h3>Fattore 4: Mancanza di esempi concreti</h3>
+                    <p>Mancano esempi concreti di aziende italiane che hanno scalato.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Inside -->
+    <section class="whats-inside">
+        <div class="container">
+            <h2>Cosa trovi nella Roadmap</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">📈</div>
+                    <div class="feature-text">
+                        <h3>Tendenze del Consumatore Italiano 2026</h3>
+                        <p>Analisi dei comportamenti d'acquisto, canali preferiti, sensibilità al prezzo e alle consegne rapide.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚖️</div>
+                    <div class="feature-text">
+                        <h3>Navigazione Fiscale e Normativa</h3>
+                        <p>Guida aggiornata alle agevolazioni, all'IVA, alle normative logistiche e alla compliance per e‑commerce.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📍</div>
+                    <div class="feature-text">
+                        <h3>Strategie per il Mercato Locale</h3>
+                        <p>Come posizionarsi nelle regioni italiane, partnership con realtà territoriali, marketing geolocalizzato.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛒</div>
+                    <div class="feature-text">
+                        <h3>Piattaforme Consigliate per Settore</h3>
+                        <p>Confronto tra Shopify, WooCommerce, PrestaShop, Magento e soluzioni B2B, con indicazioni per settore.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <div class="feature-text">
+                        <h3>Casi di Studio</h3>
+                        <p>Storie di 18 aziende italiane che hanno superato i €10M: strategie, errori da evitare, metriche di successo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="final-cta">
+        <div class="container">
+            <h2>Scarica Gratis la Roadmap 2026</h2>
+            <p>Inserisci la tua email per ricevere subito il PDF di 35 pagine direttamente nella tua casella.</p>
+            <form class="email-form" action="#" method="POST">
+                <input type="email" class="email-input" placeholder="La tua email professionale" required>
+                <button type="submit" class="submit-button">INVIAMI LA ROADMAP</button>
+            </form>
+            <p style="margin-top: 20px; font-size: 0.9rem;">Nessuno spam. Disiscriviti quando vuoi.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 E‑commerce Italia. Tutti i diritti riservati. Questo sito non è affiliato a istituzioni pubbliche.</p>
+            <p style="margin-top: 10px;">Privacy Policy | Termini di Servizio</p>
+        </div>
+    </footer>
+</body>
+</html>
