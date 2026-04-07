@@ -3,55 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK & Italy E-commerce Growth Blueprints</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>UK & Italy E-commerce Squeeze Pages</title>
     <style>
-        body { font-family: 'Source Sans 3', sans-serif; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            line-height: 1.6;
+        }
+        .cards {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 350px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, background 0.3s;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .card p {
+            opacity: 0.8;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .btn {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: auto;
+        }
+        .btn:hover {
+            background: #0da271;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+        }
+        .uk-card {
+            border-top: 5px solid #3b82f6;
+        }
+        .italy-card {
+            border-top: 5px solid #f59e0b;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+            .container {
+                padding: 30px 20px;
+            }
+        }
     </style>
 </head>
-<body class="bg-slate-50">
-    <div class="max-w-4xl mx-auto px-6 py-20">
-        <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">UK & Italy E-commerce Growth Blueprints</h1>
-            <p class="text-xl text-gray-600">Strategic guides for breaking through the £2M / €2M revenue plateau</p>
-        </div>
+<body>
+    <div class="container">
+        <h1>UK & Italy E‑commerce Squeeze Pages</h1>
+        <p class="subtitle">
+            Two high‑converting lead‑capture pages targeting UK business owners (£1M–50M revenue) and Italian PMI (15–250 dipendenti). 
+            Built with distinctive typography, luxury styling, and mobile‑first responsiveness.
+        </p>
         
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-2xl p-8 border border-teal-800/10 shadow-lg">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="w-12 h-12 bg-teal-800 rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path></svg>
-                    </div>
-                    <h2 class="text-2xl font-bold text-gray-900">UK E-commerce Growth Blueprint</h2>
-                </div>
-                <p class="text-gray-700 mb-6">A 42‑page strategic guide for UK e‑commerce leaders, with post‑Brexit compliance, tax efficiency strategies, and 23 case studies of companies scaling past £10M.</p>
-                <a href="squeeze-page-uk.html" class="inline-flex items-center gap-2 px-6 py-3 bg-teal-800 text-white font-semibold rounded-lg hover:bg-teal-900 transition-colors">
-                    Visit UK Page
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </a>
-            </div>
+        <div class="cards">
+            <a href="squeeze-page-uk.html" class="card uk-card">
+                <h2>🇬🇧 UK Squeeze Page</h2>
+                <p>Free "Post‑Brexit E‑commerce Blueprint" for UK business owners. Deep teal & gold palette, Playfair Display typography, luxury form styling.</p>
+                <span class="btn">View UK Page →</span>
+            </a>
             
-            <div class="bg-white rounded-2xl p-8 border border-amber-900/10 shadow-lg">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="w-12 h-12 bg-amber-900 rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    </div>
-                    <h2 class="text-2xl font-bold text-gray-900">Checklist ATECO 2026 (Italia)</h2>
-                </div>
-                <p class="text-gray-700 mb-6">Una guida strategica di 35 pagine per le PMI italiane, con la nuova classificazione ATECO 2026, adempimenti fiscali ottimizzati e 18 casi di studio di aziende che hanno superato i €10M.</p>
-                <a href="squeeze-page-italy.html" class="inline-flex items-center gap-2 px-6 py-3 bg-amber-900 text-white font-semibold rounded-lg hover:bg-amber-800 transition-colors">
-                    Visita Pagina Italia
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </a>
-            </div>
+            <a href="squeeze-page-italy.html" class="card italy-card">
+                <h2>🇮🇹 Italy Squeeze Page</h2>
+                <p>Free "ATECO 2026 Compliance Roadmap" for Italian PMI. Warm amber & orange palette, Cormorant Garamond typography, Italian‑market focus.</p>
+                <span class="btn">View Italy Page →</span>
+            </a>
         </div>
         
-        <div class="mt-12 text-center text-gray-500 text-sm">
-            <p>GitHub Pages repository: <a href="https://github.com/rrigamonti/uk-italy-squeeze-pages" class="text-teal-800 hover:underline">rrigamonti/uk-italy-squeeze-pages</a></p>
-            <p class="mt-2">Live URLs: <a href="https://rrigamonti.github.io/uk-italy-squeeze-pages/squeeze-page-uk.html" class="text-teal-800 hover:underline">UK Page</a> • <a href="https://rrigamonti.github.io/uk-italy-squeeze-pages/squeeze-page-italy.html" class="text-amber-900 hover:underline">Italy Page</a></p>
+        <div style="margin-top: 50px; padding: 25px; background: rgba(255,255,255,0.05); border-radius: 20px; text-align: left;">
+            <h3 style="margin-bottom: 15px;">🚀 Next Steps</h3>
+            <ul style="list-style: none; line-height: 1.8;">
+                <li>✓ <strong>Pages deployed</strong> – Live on GitHub Pages</li>
+                <li>✓ <strong>Root landing page</strong> – You're viewing it now</li>
+                <li>→ <strong>Tracking setup</strong> – Add GA4 & Meta Pixel IDs</li>
+                <li>→ <strong>Email integration</strong> – Connect Mailchimp/ConvertKit form</li>
+                <li>→ <strong>Visual assets</strong> – Generate hero images & ebook covers</li>
+                <li>→ <strong>Ad launch</strong> – Start Facebook/LinkedIn campaigns</li>
+            </ul>
         </div>
     </div>
+    
+    <footer>
+        <p>© 2026 UK/Italy E‑commerce Launch Project | <a href="https://github.com/rrigamonti/uk-italy-squeeze-pages" style="color: #93c5fd; text-decoration: none;">GitHub Repository</a></p>
+        <p style="margin-top: 10px;">Built with OpenClaw AI • Last updated: 2026‑04‑07</p>
+    </footer>
 </body>
 </html>
