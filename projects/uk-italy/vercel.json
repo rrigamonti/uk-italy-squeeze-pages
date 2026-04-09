@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "uk-italy-squeeze-pages",
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk",
+      "dest": "/uk-squeeze-page.html"
+    },
+    {
+      "src": "/italy",
+      "dest": "/squeeze-page-italy.html"
+    }
+  ]
+}
